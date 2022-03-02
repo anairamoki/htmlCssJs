@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Float & Align</title>
+  <style>
+    body{
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.4em;
+    }
+    /* center the content */
+    *{
+      box-sizing: border-box;
+    }
+    .container {
+      max-width: 960px; /*to make it web responsive*/
+      margin: auto;
+    }
+
+    /* When the float is being use, I have to create a new class to clear the float in the  both sides of the container (left and right) to push down the last div*/
+    .clr{
+      clear: both; /* clears the left and right floats*/
+    }
+    .box{
+      background: lightgray;
+      border: 1px solid #333;
+      margin-bottom: 15px;
+    }
+    .box h3{
+      text-align: center; 
+    }
+    .box p{
+      /* text align property */
+      text-align: justify; /* make all the edges even*/
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+    #box-2{ /* always use width with float. Also use % in width when is floating the content. Pay attention to the max-width property set above. */
+      float: left;
+      width: 68%;
+    }
+    #box-3{
+      float:right;
+      width: 30%;
+    }
+  </style>
+</head>
+<body>
+  <!-- emmet shortcut for putting a different id and class in the same div ->  #box-1.box -->
+  <div class="container"> <!-- to center the content in the page, create a div with class container and set margin to AUTO-->
+    <div id="box-1" class="box">
+      <h3>Heading</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit voluptas explicabo assumenda odio laborum a nemo illo vel at alias?</p>
+    </div>
+    <div id="box-2" class="box">
+      <h3>Heading</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit voluptas explicabo assumenda odio laborum a nemo illo vel at alias?</p>
+    </div>
+    <div id="box-3" class="box">
+      <h3>Heading</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit voluptas explicabo assumenda odio laborum a nemo illo vel at alias?</p>
+    </div>
+    <div class="clr"> <!-- to push down the last div, I created a new class, clr-->
+      <div id="box-4" class="box">
+        <h3>Heading</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit voluptas explicabo assumenda odio laborum a nemo illo vel at alias?</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html> 

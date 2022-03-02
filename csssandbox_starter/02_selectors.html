@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>CSS Selectors</title>
+  <style>
+    /* Element selectors -  grab the whole web page*/
+  body{
+      background-color: #333;
+    }
+    /* 
+    . is for classes 
+    # is for IDs
+    */
+    .primary-heading{
+      color: green;
+    }
+    #welcome{
+      background-color: #f4f4f4;
+    }
+
+    /* Multiple Selectors */
+    #welcome, #about{
+      border: 1px solid #ccc;
+      padding: 10px;
+      margin-bottom: 5px;
+    }
+
+    /* Nested Selectors */
+    /* QUando não usa a vígula, estamos estilizando os  nested selectors */
+    #welcome p{
+      font-size: 20px;
+    }
+
+    #about{
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <div id="welcome">
+    <h2 class="primary-heading">Welcome</h2> 
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam dolore reiciendis alias labore, quidem quis. Ab laborum minus numquam eveniet.  </p>
+  </div>
+  <div id="about">
+    <h2>About</h2> 
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam dolore reiciendis alias labore, quidem quis. Ab laborum minus numquam eveniet.  </p>
+  </div>
+</body>
+</html>
