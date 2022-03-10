@@ -127,4 +127,9 @@ img {
   margin-bottom: 15px;
 } 
 
+/* Cases Section */
+.cases img:hover{
+  opacity: 0.7;
+}
+
 
