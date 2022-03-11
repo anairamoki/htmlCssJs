@@ -106,8 +106,13 @@ img {
 }
 
 /*the content goes behind of overlay, so it can be fixed usins z-index*/
-.hero *{ /*anythin in .hero do:*/
+.hero * { /*anything in .hero do:*/
   z-index: 10; /*the content goes back to in front of overlay*/
+}
+
+.hero.blog {
+  background: url('../images/home/blog.jpg') no-repeat center center/cover;
+  height: 30vh;
 }
 
 /* Icons */
