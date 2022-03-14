@@ -48,6 +48,11 @@ img {
   position: fixed; /*to be fixed when the page is scrolled down*/
   top: 0px; /*always be stick in the top of page*/
   padding: 0 30px;
+  transition: 0.5s;
+}
+
+.navbar .top{
+  background: transparent;
 }
 .navbar a {
   color:#fff;
