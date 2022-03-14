@@ -50,6 +50,7 @@
   display: flex;
   text-align: center;
   justify-content: center;
+  text-align: center;
   height: 100%;
 }
 
@@ -60,7 +61,6 @@
 /* flex-columns */
 .flex-columns .flex-reverse .row {
   flex-direction: row-reverse;
-
 }
 
 .flex-columns .row {
